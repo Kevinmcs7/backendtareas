@@ -8,8 +8,9 @@ import  cors from "cors";
 const app = express()
 
 app.use(cors({
-    origin: 'http://frontendtareascorregido.vercel.app',
-    credentials: true
+    origin: 'https://frontendtareascorregido.vercel.app/',
+    credentials: true,
+    methods:'GET,POST,PUT,DELETE',
 }))
 app.use(morgan('dev'));
 app.use(express.json());
